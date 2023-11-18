@@ -10,7 +10,7 @@
     }
 
     .card-orrizzontale {
-        width: 100%;
+        width: 90%;
         padding: 35px;
         background-color: #141414;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -24,8 +24,10 @@
         width: 100%;
     }
 }@media only screen and (max-width: 530px){
-    .description_room, .list{
+    .description_room{
         font-size: 10pt;
+    }.card-orrizzontale h2, .service-list{
+        text-align: center !important;
     }
 }@media only screen and (max-width: 1250px){
     .btn{
