@@ -7,26 +7,36 @@
   <!-- Carica i font da Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="media.css">
+  <script>
+    function scrollToTarget() {
+        var targetDiv = document.getElementById('fondo');
+        targetDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function goToSite(){
+      window.open("https://www.leghie.it/", "_blank");
+    }
+  </script> 
 </head>
 <body>
-    <div class="head">
-        <h1><span class="logo_font">Le Ghie</span><span style="color: #fff"> X </span></h1>
-        <img src="assets/img/logo_wakeup.jpg" alt="" class="head_img">
-    </div>
-    
+    <h1><span class="logo_font">Le Ghie</span><span style="color: #fff; font-size: 27pt; font-family: 'Montserrat';"> X </span><span style="color: #ddff01; font-family: 'Montserrat'; font-weight: 800; font-size: 27pt;"> WAKE UP </span></h1>    
     <div class="desc">
-        <h2>Prenota il tuo pernottamento alle Ghie in occasione dell'evento WakeUp con la partecipazione dello special guest Gabry Ponte</h2>
+        <p>Scopri la promozione offerta da <i><b>Le Ghie</b></i> del <i><b>Wake Up</b></i> event <br>
+          con la partecipazione di <b><span style="color: #ddff01;">Gabry Ponte</span></b></p>
     </div>
   <div class="card-container">
     <div class="card">
       <div class="card-content">
         <h2>Premium Room</h2>
+        <p class="description-room" style="text-align: center; font-size: 13pt;">Max 2 persone</p>
         <p class="description_room">Questa soluzione offre una camera da letto con TV e letto con materasso e cuscini antiallergeni in latex-memory,
              bagno privato, patio all'aperto con poltroncine, riscaldamento a pavimento e VMC (Ventilazione Meccanica Controllata) per una migliore qualità dell'aria.</p>
+        <br>
         <h3>Prezzo per una persona</h3>
         <ul>
             <li>40€ - pernottamento</li>
@@ -40,22 +50,23 @@
         </ul>
       </div>
       <div class="post">
-        <button class="btn-yellow">Chiama</button>
-        <button class="btn-outline">Email</button>
-      </div>
+        <button class="btn-yellow btn" onclick="scrollToTarget()">Contattaci</button>
+        <button class="btn-outline btn" onclick="goToSite()">Visita sito</button>
     </div>
-
-    <div class="card">
+    </div>
+      <div class="card">
         <div class="card-content">
-          <h2>Premium Room</h2>
-          <p class="description_room">Questa soluzione offre una camera da letto con TV e letto con materasso e cuscini antiallergeni in latex-memory,
-               bagno privato, patio all'aperto con poltroncine, riscaldamento a pavimento e VMC (Ventilazione Meccanica Controllata) per una migliore qualità dell'aria.</p>
+          <h2>Suite Room</h2>
+          <p class="description-room" style="text-align: center; font-size: 13pt;">Max 4 persone</p>
+          <p class="description_room">Questa soluzione offre una cucina con piano ad induzione, divano-letto con due posti, camera da letto con TV e letto con materasso e cuscini antiallergeni in latex-memory,
+               bagno privato, balcone vista Langhe, riscaldamento a pavimento e VMC (Ventilazione Meccanica Controllata).</p>  
+          <br>
           <h3>Prezzo per una persona</h3>
           <ul>
-              <li>40€ - pernottamento</li>
+              <li>70€ - pernottamento</li>
               <li>25€ - ingresso evento</li>
           </ul>
-          <p class="price">65€</p>
+          <p class="price">95€</p>
           <h4>Persona aggiuntiva</h4>
           <ul>
               <li>10€ - pernottamento</li>
@@ -63,11 +74,28 @@
           </ul>
         </div>
         <div class="post">
-          <button class="btn-yellow btn">Chiama</button>
-          <button class="btn-outline btn">Email</button>
+          <button class="btn-yellow btn" onclick="scrollToTarget()">Contattaci</button>
+          <button class="btn-outline btn" onclick="goToSite()">Visita sito</button>
         </div>
-      </div>
+    </div>
   </div>
+  <div class="card-container">
+    <div class="card-orrizzontale">
+      <div class="card-content">
+        <h2 style="text-align: left;">Servizi aggiuntivi per persona</h2>
+        <ul>
+            <li>Servizio navetta: 10€</li>
+            <li>Colazione: 5€</li>
+            <li>Cena all'home restaurant (su prenotazione)</li>
+        </ul>
+      </div>
+      <div class="post">
+        <button class="btn-yellow btn" onclick="scrollToTarget()">Contattaci</button>
+        <button class="btn-outline btn" onclick="goToSite()">Visita sito</button>
+      </div>
+    </div>
+  </div>
+
 
   <footer class="footer" style="padding: 25px; text-align: center;" id="fondo">
     <div style="display: flex; width: 100%; align-items: center; justify-content: center;" class="column_father">
@@ -75,9 +103,9 @@
       <div style="text-align: left; color: black; margin-left: 25px;">
         <p class="text-uppercase mb-4 font-weight-bold" style="text-align: center; color:#fff">Contatti</p>
         <a href="https://www.google.it/maps/place/Le+Ghie/@44.4358072,7.8652908,17z/data=!3m1!4b1!4m6!3m5!1s0x12d29f67137d9b2f:0xfbd31a9ac8786111!8m2!3d44.4358034!4d7.8678657!16s%2Fg%2F11l5hdgqym?entry=ttu" 
-        style="color: gray;" target="_blank"><i class="fas fa-home mr-3"></i>Strada S. Quintino, 67, Mondovì, CN 12084</a><br><br>
-        <a style="color: gray;" href="mailto:info@leghie.it" target="_blank"><i class="fas fa-envelope mr-3"></i> info@leghie.it</a><br><br>
-        <a style="color: gray;" href="tel:+393501731796" target="_blank"><i class="fas fa-phone mr-3"></i> +39 350 173 1796</a><br><br>
+        style="color: lightgray;" target="_blank"><i class="fas fa-home mr-3"></i>Strada S. Quintino, 67, Mondovì, CN 12084</a><br><br>
+        <a style="color: lightgray;" href="mailto:info@leghie.it" target="_blank"><i class="fas fa-envelope mr-3"></i> info@leghie.it</a><br><br>
+        <a style="color: lightgray;" href="tel:+393501731796" target="_blank"><i class="fas fa-phone mr-3"></i> +39 350 173 1796</a><br><br>
         <div class="col-6 text-right" style="display: flex;">
           <a href="https://www.instagram.com/leghie.it/" target="_blank" style="color: #C13584;">
               <i class="fab fa-instagram fa-2x"></i>&nbsp;&nbsp;
@@ -92,7 +120,7 @@
     </div>
   </footer>
   <div style="width: 100%; text-align: center;" class="finale">
-    <a style="color: gray; padding: 20px;">© 2023 Le Ghie - P.Iva 04076030040</a>
+    <a style="color: lightgray; padding: 20px;">© 2023 Le Ghie - P.Iva 04076030040</a>
   </div>
 </body>
 </html>

@@ -1,0 +1,34 @@
+@media only screen and (max-width: 1020px) {
+    .card-container {
+        flex-direction: column; /* Imposta la direzione della colonna per le card */
+        align-items: center; /* Allinea le card al centro quando sono in colonna */
+    }
+
+    .card {
+        width: 100%; /* Imposta la larghezza al 100% per occupare l'intero spazio disponibile */
+        margin-bottom: 20px; /* Aggiunto margine inferiore per separare le card */
+    }
+
+    .card-orrizzontale {
+        width: 100%;
+        padding: 35px;
+        background-color: #141414;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 30px;
+        overflow: hidden;
+        color: #fff;
+        transition: 0.3s ease-in-out;
+    }
+}@media only screen and (max-width: 760px){
+    .card-container-services{
+        width: 100%;
+    }
+}@media only screen and (max-width: 530px){
+    .description_room, .list{
+        font-size: 10pt;
+    }
+}@media only screen and (max-width: 1250px){
+    .btn{
+        font-size: 12pt;
+    }
+}

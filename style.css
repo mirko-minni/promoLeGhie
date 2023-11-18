@@ -1,11 +1,9 @@
-
-
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #282828;
+    background-color: #404040;
   }
 
   .head{
@@ -28,18 +26,17 @@ body {
     justify-content: space-between;
     max-width: 65%;
     margin: 20px auto;
-    background-color: #282828;
-    border-radius: 10px;
+    background-color: #404040;
   }
 
   .card {
     width: 44%;
+    padding: 35px;
     background-color: #141414;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
+    border-radius: 30px;
     overflow: hidden;
     margin: 3%;
-    border-radius: 5px;
     color: #fff;
     transition: 0.3s ease-in-out;
   }.card:hover{
@@ -55,24 +52,61 @@ body {
   .card-content {
     padding: 20px;
   }
+
+  .card-orrizzontale{
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 2%;
+    background-color: #141414;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    overflow: hidden;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }
+
   h1{
     color: #ddff01;
     text-align: center;
   }
   h2 {
     margin-top: 0;
+    text-align: center;
   }.desc{
     width: 70%;
     margin: auto;
   }.desc h2{
     color: #ddff01;
     text-align: center;
-  }.price{
+  }.desc p{
+    font-family: 'Montserrat';
+    font-weight: 500;
     font-size: 18pt;
+    color: #fff;
     text-align: center;
+  }.price{
+    font-size: 25pt;
+    text-align: center;
+    font-weight: 800;
+    color: #ddff01;
+
   }.add{
     font-size: 16pt;
     text-align: center;
+  }
+
+  .description_room{
+    line-height: 150%;
+    font-size: 12.5pt;
+    text-align: justify;
+  }
+
+  ul {
+    list-style: none;
+  }
+  li {
+    margin-bottom: 3%;
+    font-size: 13pt;
   }
 
   h3 {
@@ -80,7 +114,7 @@ body {
   }
   
   .btn-yellow{
-    width: 40%;
+    width: 42%;
     height: 40px;
     border-radius: 20px;
     border: 0px;
@@ -95,7 +129,7 @@ body {
     border: 1px solid #ddff01;
     color: #ddff01;
   }.btn-outline{
-    width: 40%;
+    width: 42%;
     height: 40px;
     border-radius: 20px;
     border: 0px;
