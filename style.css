@@ -1,0 +1,136 @@
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #282828;
+  }
+
+  .head{
+    display: flex;
+    justify-content: center;
+  }.head_img{
+    margin-top: 1.8%;
+    width: 12vw;
+    height: 8vh;
+  }
+
+  .logo_font{
+    font-family: 'Dancing Script';
+    font-size: 32pt;
+    color: #fff;
+  }
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 65%;
+    margin: 20px auto;
+    background-color: #282828;
+    border-radius: 10px;
+  }
+
+  .card {
+    width: 44%;
+    background-color: #141414;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 3%;
+    border-radius: 5px;
+    color: #fff;
+    transition: 0.3s ease-in-out;
+  }.card:hover{
+    box-shadow: 8px 8px 8px #202020;
+  }
+
+  .card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #eee;
+  }
+
+  .card-content {
+    padding: 20px;
+  }
+  h1{
+    color: #ddff01;
+    text-align: center;
+  }
+  h2 {
+    margin-top: 0;
+  }.desc{
+    width: 70%;
+    margin: auto;
+  }.desc h2{
+    color: #ddff01;
+    text-align: center;
+  }.price{
+    font-size: 18pt;
+    text-align: center;
+  }.add{
+    font-size: 16pt;
+    text-align: center;
+  }
+
+  h3 {
+    margin-bottom: 0;
+  }
+  
+  .btn-yellow{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    margin: 2%;
+    background-color: #ddff01;
+    font-weight: 700;
+    font-size: 15.5pt;
+    transition: 0.5s ease-in-out;
+  }.btn-yellow:hover{
+    transform: scale(1.05);
+    background-color: transparent;
+    border: 1px solid #ddff01;
+    color: #ddff01;
+  }.btn-outline{
+    width: 40%;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    margin: 2%;
+    background-color: #141414;
+    font-weight: 700;
+    font-size: 15.5pt;
+    transition: 0.5s ease-in-out;
+    border: 1px solid #ddff01;
+    color: #ddff01;
+  }.btn-outline:hover{
+    transform: scale(1.05);
+    background-color: #ddff01;
+    color: #141414;
+  }.post{
+    width: auto;
+    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+
+
+
+  .footer {
+    margin-top: 80px;
+    border-top: 2px solid transparent; /* Bordo trasparente con spessore di 1px */
+    border-image: linear-gradient(to left, transparent, #fff, transparent) 1; /* Utilizza un gradiente come bordo sfumato */
+    font-size: 13pt;
+}
+
+.finale {
+    font-size: 13pt;
+}
+
+.footer a {
+    margin-right: 10px;
+}
